@@ -6,6 +6,21 @@
 html,body{
     height:100%;
 }
+/*Fonte*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Open+Sans:wght@300&family=Teko:wght@300;400&display=swap');
+
+.personalFont{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.fontTeko{
+    font-family: 'Teko', sans-serif;
+}
+.fontPlex{
+    font-family: 'IBM Plex Mono', monospace;
+}
+.fontOpenSans{
+    font-family: 'Open Sans', sans-serif;
+}
 /*Classes gerais*/
 .container{
     width:100%;
@@ -20,15 +35,6 @@ html,body{
 }
 .w100{
     width:100%;
-}
-.personalFont{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.fontTeko{
-    font-family: 'Teko', sans-serif;
-}
-.fontPlex{
-    font-family: 'IBM Plex Mono', monospace;
 }
 .text-center{
     text-align:center;
@@ -50,12 +56,13 @@ html,body{
     margin-right:5px;
 }
 .navbar{
-    background-color: rgb(44, 62, 80);
+    background-color: #24093d;
     width: 100%;
 }
 .uppercase{
     text-transform:uppercase;
 }
+
 /*RESPONSIVO*/
 @media only screen and (max-width: 768px) {
     .logomarca{
@@ -70,9 +77,14 @@ html,body{
         margin-top:5px;
         padding-bottom:25px;
     }
-    
+
   }
 
+  @media only screen and (max-width: 350px) {
+    .sobre-redes{
+       visibility: hidden;
+      }
+  }
 
   /*Classes especificas*/
   /*nav*/
@@ -92,7 +104,29 @@ html,body{
   }
   /*sobre*/
   .sobre{
-    padding-top:20px;
-    background-color:blueviolet;
+    padding:120px 2% 120px 2%;
+    height:100%;
+    max-height:700px;
+    min-height:700px;
+    background-image:url('../midias/imagens/capa.png');
+    background-position:initial;
+    background-repeat:no-repeat;
+    background-size:cover;
+  }
+  .sobre h2{
+    font-size:50px;
+  }
+  .sobre p{
+    padding-top:2%;
+    font-size:20px;
+  }
+  .sobre-redes{
+    padding-top:80px;
+    margin:0 auto;
+  }
+  .sobre-redes a{
+    color:yellow;
+    padding-right:20px;
+    font-size:larger;
   }
   
