@@ -153,8 +153,7 @@ html,body{
   .sobre{
     padding:120px 2% 120px 2%;
     height:100%;
-    max-height:700px;
-    min-height:700px;
+    min-height:800px;
     background-image:url('../midias/imagens/capa.png');
     background-position:initial;
     background-repeat:no-repeat;
