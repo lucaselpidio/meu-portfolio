@@ -45,11 +45,17 @@ html,body{
 .imgRedes{
     width:50px;
 }
+.imgRedes:hover{
+  width:53px;
+}
 .top{
     padding:2% 0 2% 0;
 }
+.bottom{
+  padding-bottom:60px;
+}
 .bg{
-    background-color:rgb(33,37,41);
+  background-color: #24093d;
 }
 .white{
     color:white;
@@ -68,8 +74,18 @@ html,body{
     width:70px;
     height:auto;
 }
-
+.divisor{
+  width:100%;
+  height:2px;
+  background-color:white;
+}
 /*RESPONSIVO*/
+@media only screen and (max-width: 1024px) {
+  .resp-l{
+    width:100%;
+  }
+
+}
 @media only screen and (max-width: 768px) {
     .logomarca{
         width:100%;
@@ -86,7 +102,15 @@ html,body{
     .resp-m{
         width:50%;
     }
-
+    .resp-f{
+        width:100%;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .img-projetos{
+      width:300px !important ;
+      height:300px;
+    }
   }
 
   @media only screen and (max-width: 350px) {
@@ -97,6 +121,10 @@ html,body{
   @media only screen and (max-width: 300px) {
     .resp-m{
         width:100%;
+    }
+    .img-projetos{
+      width:250px !important ;
+      height:250px;
     }
   }
 
@@ -155,4 +183,44 @@ html,body{
     color:white;
     font-family: 'Open Sans', sans-serif;
     padding:0 2% 40px 2%;
+  }
+  /*projetos*/
+  .projetos{
+    padding-top:60px;
+  }
+  .projetos > h2 {
+    font-size:30px;
+    padding-top:2%;
+  }
+  .img-projetos{
+    width:400px;
+    height:400px;
+    padding: 60px 2% 20px 2%;
+  }
+  .img-projetos:hover{
+    width:405px;
+    height:405px;
+  }
+  .projetos > .container > .single > h2 > a{
+    color:white;
+    text-decoration:none;
+  }
+  .projetos > .container > .single > p{
+    padding:15px 2% 20px 2%;
+  }
+  /*footer*/
+  footer > .container > .w50{
+    padding:40px 2% 140px 2%;
+  }
+  footer > h3{
+    padding:30px 2% 0 2%;
+  }
+  footer > .container > .w50 > h2{
+    padding: 0 2% 10px 2%;
+  }
+  footer > .container > .w50 > p{
+    padding-bottom:5px;
+  }
+  footer > .container > .w50 > p > a{
+    color:yellow;
   }
